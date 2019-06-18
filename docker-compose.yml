@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  spark:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: all-spark-notebook
+    ports:
+      - 8888:8888
+    networks:
+      - spark
+    volumes:
+      - ./notebooks:/home/jovyan/work
+
+networks:
+  spark:
+    driver: bridge
