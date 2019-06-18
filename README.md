@@ -1,2 +1,1 @@
-# spark-docker-dev
-All Spark Notebook Docker Development Environment
+# All Spark Notebook Docker/Compose Development Environment
